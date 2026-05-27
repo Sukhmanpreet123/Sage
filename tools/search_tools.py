@@ -17,7 +17,7 @@ import xml.etree.ElementTree as ET
 import feedparser
 import re
 import time
-from ddgs import DDGS
+from duckduckgo_search import DDGS
 
 # ── Credibility Scoring ───────────────────────────────────────────────────────
 # Scores reflect trustworthiness of source type and domain.
