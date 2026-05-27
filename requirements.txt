@@ -1,0 +1,63 @@
+# ============================================================
+# Multi-Agent Research Intelligence System — Requirements
+# 2026 Edition | All Free / Open-Source
+# ============================================================
+
+# Core orchestration framework (LangGraph 0.3+ — 2026 standard)
+langchain>=0.3.0
+langgraph>=0.3.0
+langchain-community>=0.3.0
+
+# SQLite checkpointer for crash recovery + state persistence (NEW 2026)
+langgraph-checkpoint-sqlite>=2.0.0
+
+# Free LLM integrations
+langchain-ollama>=0.3.0          # ChatOllama (Llama 4 / Gemma 4 local)
+langchain-groq>=0.2.0            # Groq Cloud (Llama 4 Scout — ultra-fast free)
+langchain-google-genai>=2.0.0    # Gemini 2.0 Flash (Google AI Studio free)
+
+# Free search tools (no API keys required)
+duckduckgo-search>=6.0.0
+wikipedia>=1.4.0
+arxiv>=2.1.0
+feedparser>=6.0.0
+
+# Agentic RAG — Vector store + embeddings (ChromaDB cache layer)
+langchain-huggingface>=0.1.0
+sentence-transformers>=3.0.0
+chromadb>=0.5.0
+tf-keras>=2.16.0             # Required: sentence-transformers not yet Keras 3 compatible
+
+# Output generation (free)
+reportlab>=4.0.0
+streamlit>=1.40.0
+plotly>=5.18.0
+python-docx>=1.1.0       # Word document export
+ddgs>=6.0.0              # DuckDuckGo search (direct package)
+
+# Observability — LangSmith tracing
+langsmith>=0.2.0
+
+# Utilities
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# ── Phase 1 & 2 New Dependencies ─────────────────────────────────────────────
+
+# Feature 5: Personal Research Library — PDF text extraction
+pdfplumber>=0.10.0           # Primary PDF parser (handles complex layouts)
+PyPDF2>=3.0.0                # Fallback PDF parser
+
+# Feature 1: ArXiv Deep Mode — HTML section parsing
+beautifulsoup4>=4.12.0       # HTML/XML parsing for ar5iv paper sections
+lxml>=5.0.0                  # High-performance HTML parser backend for BS4
+requests>=2.31.0             # HTTP client for fetching paper HTML pages
+
+# Feature 2: Citation Graph — Network visualization
+networkx>=3.2.0              # Citation graph data structure (directed graphs)
+pyvis>=0.3.2                 # Interactive network visualization (exports to HTML)
+
+# Development / testing
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
+

@@ -1,0 +1,29 @@
+# Virtual Environment
+venv/
+.venv/
+env/
+ENV/
+
+# Python caching
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE configurations
+.vscode/
+.idea/
+
+# Environment configurations
+.env
+
+# System output data (generated PDFs, temporary files, etc.)
+output/*
+!output/.gitkeep
+
+# Vector store database folders
+chroma_db/
+.chroma/
+
+# OS specific files
+.DS_Store
+Thumbs.db

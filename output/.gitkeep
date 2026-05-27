@@ -1,0 +1,2 @@
+# output directory — stores generated PDFs and ChromaDB cache
+# This directory is gitignored (see .gitignore)
